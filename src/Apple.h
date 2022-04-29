@@ -1,5 +1,4 @@
 #pragma once
-#include <ncurses.h>
 #include "Drawable.h"
 
 class Apple : public Drawable {
@@ -8,6 +7,6 @@ public:
   {
         this->x = x;
         this->y = y;
-        this->icon = 'A';
+        this->icon = '@';
   }
 };

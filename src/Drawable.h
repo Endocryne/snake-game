@@ -1,7 +1,8 @@
 #pragma once
 
 class Drawable {
-public:
+        
+public:      
         Drawable()
         {
                 y = x = 0;
@@ -9,14 +10,22 @@ public:
         }
         Drawable(int x, int y, char ch)
         {
-                this->x = x;
                 this->y = y;
+                this->x = x;
                 this->icon = ch;
         }
-        int getX() { return x; }
-        int getY() { return y; }
-        char getIcon() { return icon; }
+
+        int getY() 
+        { 
+                return y; 
+        }
+        int getX() 
+        {
+                return x; 
+        }
+        chtype getIcon() { return icon; }
+        
 protected:
-        int x, y;
+        int y, x;
         chtype icon;
 };
